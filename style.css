@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: whitesmoke;
+    justify-items: center;
+}
+main{
+    /* background: #3498db; */
+    background: white;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    height: 80vh;
+    justify-items: center;
+    padding: 25px;
+    border: solid 1px #3498db;
+}
+.container{
+    background: #ccc;
+    height: 5vh;
+    width: 99%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    .form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 99%;
+        input, button{
+            border-radius: 5px;
+            border:none;
+            font-size: 12pt;
+        }
+        input{
+            width: 30vh;
+            height: 3vh;
+            margin-left: 2vh;
+            padding: 5px;
+        }
+        button{
+            width: 15vh;
+            height: 4vh;
+            margin-inline: 1vh;
+            color:white;
+            background:#3498db;
+        }
+        input:hover{
+            border: solid 1px #3498db;
+        }
+        /* input::before{
+            border: solid 1px #3498db;
+        } */
+    }
+}
+.elementos{
+    display: none;
+    margin-top: 2vh;
+    width: 99%;
+    height: 72vh;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: auto;
+    table{
+        /* background: blue; */
+        outline: solid 1px black;
+        width: 100%;
+        border-radius: 10px;
+        th, td{
+            outline: solid 1px black;
+            padding: 3px;
+            font-size: 13pt;
+        height: 4vh; 
+        }
+        th{background: #3498db; color: white;}
+        button{
+            width: 8vh;
+            display: inline;
+            margin: 3px;
+            height: 2.5vh;
+        }
+    }
+}
+.elementos.apareca{
+    display: block;
+}
+
+#popUp{
+    top: 0px;
+    background: #aaa;
+    border: solid 1px #3498db;
+    position: fixed;
+    wistg: 15%;
+    height: 10vh;
+    align-content: center;
+    padding: 25px;
+    border-radius: 10px;
+}

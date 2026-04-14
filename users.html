@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Usuários</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Cadastro de Usuários</h1>
+        <main>
+            <div class="container">
+                <div class="form">
+                    <input type="text" name="nome" id="name" placeholder="Nome Completo">
+                    <input type="number" name="number" id="number" placeholder="Telemóvel">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                    <nav><button onclick="enviar()">Enviar</button><button onclick="listar()">Listar</button></nav>
+                </div>
+            </div>
+
+            <div class="elementos" id="elementos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Número</th>
+                            <th>Email</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo">
+                        <!-- Os usuários aparecerão aqui! -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
